@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="nxt" layoutX="182.0" layoutY="358.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" text="Create Class Diagram" />
+      <Label layoutX="82.0" layoutY="108.0" prefHeight="17.0" prefWidth="108.0" text="Class Name" />
+      <TextField layoutX="204.0" layoutY="103.0" />
+      <Label alignment="CENTER" layoutX="216.0" layoutY="14.0" prefHeight="58.0" prefWidth="118.0" text="Enter Class Details" textAlignment="CENTER" />
+      <TabPane layoutX="52.0" layoutY="141.0" prefHeight="210.0" prefWidth="410.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Attribute">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="134.0" layoutY="24.0" />
+                        <TextField layoutX="134.0" layoutY="63.0" />
+                        <TextField layoutX="134.0" layoutY="103.0" />
+                        <Button layoutX="150.0" layoutY="143.0" mnemonicParsing="false" text="Insert Attribute" />
+                        <Label layoutX="21.0" layoutY="29.0" text="Access Specifier" />
+                        <Label layoutX="26.0" layoutY="68.0" text="Attribute Name" />
+                        <Label layoutX="42.0" layoutY="108.0" text="Data Type" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Method">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="43.0" layoutY="34.0" text="Method Name" />
+                        <TextField layoutX="157.0" layoutY="29.0" />
+                        <TextField layoutX="157.0" layoutY="62.0" />
+                        <Label layoutX="14.0" layoutY="67.0" text="Number of arguments" />
+                        <Button layoutX="148.0" layoutY="115.0" mnemonicParsing="false" text="Add Arduments" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
